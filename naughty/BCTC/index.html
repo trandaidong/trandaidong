@@ -1,1 +1,140 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trần Đại Đồng</title>
+        <style type="text/css">
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-image: url("images/background-tet.jpg");
+                text-align: center;
+            }
+            header .new_list{
+                padding-top: 30px;
+            }
+            header .new_list .new_item{
+                margin-right: 20px;
+            }
+            footer .new_list .new_item{
+                margin-right: 20px;
+                margin-top: 130px;
+            }
+            .xoc {
+                margin-top: 40px;
+                background-color: yellow;
+                border :2px solid black;
+                width: 150px;
+                padding: 12px 0 12px 0;
+                border-radius: 100px;
+                font-size: 15px;
+                font-family: 'Roboto Condensed',cursive;
+            }
+            .xoc:hover{
+                color: white;
+                background-color: #333;
+                transition: color 0.5s;
+                
+            }
+            .dia {
+                position:absolute;
+                margin-left: 580px;
+            }
+            #cuc1{
+                position: relative;
+                margin-top: 90px;
+                margin-right: 30px;
+                margin-left: 10px;
+            }
+            #cuc2 {
+                position: relative;
+                position:absolute;
+                margin-top:10px;
+                margin-left: 680px;
+                margin-bottom: 10px;
+                 /* margin-left: 10px;  */
+            }
+            #cuc3 {
+                position: relative;
+                /* position:absolute; */
+                margin-top: 10px;
+                margin-left:70px;
+                 /* margin-left: 10px;  */
+            } 
+            .bat{
+                /* position: relative; */
+                /* position: absolute; */
+                margin-bottom: 100px;
+                margin-left: 600px;
+            }
+        </style>
+        <script type="text/javascript">
+            var index1;
+            var index2;
+            var index3;
+            var imgList=new Array();
+            imgList[0]="images/anh3nai1.jpg";
+            imgList[1]="images/anh3bau.jpg";
+            imgList[2]="images/anh3ga.jpg";
+            imgList[3]="images/anh3ca.jpg";
+            imgList[4]="images/anh3cua.jpg";
+            imgList[5]="images/anh3tom.jpg";
+            function showImage1(){
+                index1=Math.floor(Math.random()*imgList.length);
+                var result='<img src="'+imgList[index1]+'" width="60"/>';
+                document.getElementById("cuc1").innerHTML=result;
+            }
+            function showImage2(){
+                
+                index2=Math.floor(Math.random()*imgList.length);
+                var result='<img src="'+imgList[index2]+'" width="60"/>';
+                document.getElementById("cuc2").innerHTML=result;
+            } function showImage3(){
+                index3=Math.floor(Math.random()*imgList.length);
+                var result='<img src="'+imgList[index3]+'" width="60"/>';
+                document.getElementById("cuc3").innerHTML=result;
+            }
+            function tiencuoc(){
+                confirm("Chơi vào hư người đấy!!!.");
+                if(confirm){
+                    var value=window.prompt("Ok. Nhập tiền đi :))");
+                   // showImage1();showImage2();showImage3();
+                }
+            }
+            function thongbao(){
+                SVGFEDropShadowElement("Good job!","yout","ahihi");
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="new_list">
+                <button class="new_item"><img src="images/anh3nai1.jpg" alt="" width="100" onclick="tiencuoc();"></button>
+                <button class="new_item"><img src="images/anh3bau.jpg" alt="" width="100" onclick="tiencuoc();"></button>
+                <button class="new_item"><img src="images/anh3ga.jpg" alt="" width="100" onclick="tiencuoc();"></button>
+            </div>
+        </header>
+            <div class="dia"><img src="images/Đĩa.png" alt="" width="350">
+            </div>
+            <div id="cuc1">
+                <img src="images/anh3nai1.jpg" alt="" width="60">
+            </div>
+            <div id="cuc2">
+                <!-- <img class="cucxingau" id="cuctren" src="images/anh3nai1.jpg" alt="" width="60"> -->
+                <img src="images/anh3nai1.jpg" alt="" width="60">
+            </div>
+            <div id="cuc3">
+                <img src="images/anh3nai1.jpg" alt="" width="60">
+            </div>
+        <footer class="row2">
+            <div class="new_list">
+                <button class="new_item"><img src="images/anh3ca.jpg" alt="" width="100"onclick="thongbao();"></button>
+                <button class="new_item"><img src="images/anh3cua.jpg" alt="" width="100"onclick="tiencuoc();"></button>
+                <button class="new_item"><img src="images/anh3tom.jpg" alt="" width="100"onclick="tiencuoc();"></button>
+            </div>
+        </footer>
+        <div>
+            <input class="xoc" type="button" value="Xóc" onclick="showImage1();showImage2();showImage3();"/>
+        </div>
+    </body>
+</html>
