@@ -1,1 +1,112 @@
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Kim Trang</title>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #16384c;
+    }
+    .container{
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .container .card{
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: #fff;
+        margin: 30px 10px ;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow:  0 5px 202px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+    .container .card:hover{
+        height: 420px;
+    }
+    .container .card .imgB{
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+       
+    }
+    .container  .card .imgB img{
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+        
+    }
+    .container  .card .content{
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition:  0.3s ease-in-out;
+    }
+    .container  .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+    }
+    .img{
+        width: 300px;
+        height: 266px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgB">
+                <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/346669130_1388690098619310_6015638693639550641_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aOM19cr_AzMAX9CfIdH&_nc_ht=scontent-hkt1-1.xx&oh=00_AfAQs93rUjOP6n0qGZlq8naJjkUE9yy2rxgLtHbgR6n7yw&oe=6487A5F0" alt="" class="img">
+            </div>
+            <div class="content">
+                <h2>TRANG</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus rem dolores repellat nemo reprehenderit magni, veniam recusandae aliquam, sed dolorem ipsam. Repudiandae exercitationem quisquam enim est eveniet laborum voluptatibus.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgB">
+                <img src="https://scontent-hkt1-2.xx.fbcdn.net/v/t39.30808-6/346652606_256950030171029_6412287827928639741_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=of_xnX6UURYAX-nf_jK&_nc_ht=scontent-hkt1-2.xx&oh=00_AfA1otk3-V46REu0fH4qElKUMQbvtsfahR9GHKchOcfjFQ&oe=6487A96F" alt=""  class="img">
+            </div>
+            <div class="content">
+                <h2>XẤU</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus rem dolores repellat nemo reprehenderit magni, veniam recusandae aliquam, sed dolorem ipsam. Repudiandae exercitationem quisquam enim est eveniet laborum voluptatibus.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgB">
+                <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t39.30808-6/346848400_590942999492895_7692950839601922492_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tRN-s_Ko_dQAX8uq4Ps&_nc_ht=scontent-hkt1-1.xx&oh=00_AfBUHo2ahhstGwC1Bl8FSxzIscOHFwxwmp0Mji3hRTPotg&oe=6486E79F" alt=""  class="img">
+            </div>
+            <div class="content">
+                <h2>XÍIII</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ducimus rem dolores repellat nemo reprehenderit magni, veniam recusandae aliquam, sed dolorem ipsam. Repudiandae exercitationem quisquam enim est eveniet laborum voluptatibus.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
